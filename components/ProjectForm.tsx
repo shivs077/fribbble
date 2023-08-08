@@ -10,7 +10,7 @@ import Button from "./Button";
 import { createNewProject, fetchToken, updateProject } from "@/lib/actions";
 import { useRouter } from "next/navigation";
 
-function ProjectForm({ type, session, project }: { type: string; session: SessionInterface; project: ProjectInterface }) {
+function ProjectForm({ type, session, project }: { type: string; session: SessionInterface; project?: ProjectInterface }) {
   const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
