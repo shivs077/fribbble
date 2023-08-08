@@ -8,7 +8,7 @@ import { SessionInterface, UserProfile } from "@/common.types";
 import { createUser, getUser } from "./actions";
 
 export const authOptions: NextAuthOptions = {
-  secret: process.env.AUTH_SECRET,
+  // secret: process.env.AUTH_SECRET,
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
